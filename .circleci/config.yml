@@ -10,8 +10,7 @@ workflows:
     "MSP Workflow":
         jobs:
             - steps:
-                - hello/hello-build:
-                    - to: "hoge"
+                - run : echo "hoge"
             # - when:
             #     condition: << variables.todo-vm-deploy >>
             #     steps:
