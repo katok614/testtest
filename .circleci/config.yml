@@ -9,8 +9,8 @@ orbs:
 workflows:
     "MSP Workflow":
         jobs:
-            - steps:
-                - run : echo "hoge"
+            steps:
+                run : echo "hoge"
             # - when:
             #     condition: << variables.todo-vm-deploy >>
             #     steps:
