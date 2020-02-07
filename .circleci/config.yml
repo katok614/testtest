@@ -1,7 +1,7 @@
 version: 2.1
 
 variables:
-    &todo-vm-deploy true
+    todo-vm-deploy: true
  
 orbs:
     hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
@@ -10,6 +10,6 @@ workflows:
     "MSP Workflow":
         jobs:
             - when:
-                condition: << *todo-vm-deploy >>
+                condition: << todo-vm-deploy >>
                 steps:
                   - hello/hello-build
