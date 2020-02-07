@@ -6,13 +6,12 @@ variables:
 orbs:
     hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
 
-workflows:
-    "MSP Workflow":
-        jobs:
-            steps:
-                - run: echo "hoge"
-            # - when:
-            #     condition: << variables.todo-vm-deploy >>
-            #     steps:
-            #       - hello/hello-build:
-            #         - to: "vm-deploy"
+jobs:
+    build:
+        steps:
+            - run: echo "hoge"
+    # - when:
+    #     condition: << variables.todo-vm-deploy >>
+    #     steps:
+    #       - hello/hello-build:
+    #         - to: "vm-deploy"
