@@ -9,7 +9,11 @@ orbs:
 workflows:
     "MSP Workflow":
         jobs:
+            - steps:
+                  - hello/hello-build:
+                    - to: "hoge"
             - when:
                 condition: << variables.todo-vm-deploy >>
                 steps:
-                  - hello/hello-build
+                  - hello/hello-build:
+                    - to: "vm-deploy"
