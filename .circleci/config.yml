@@ -16,7 +16,7 @@ jobs:
         docker: 
             - image: ubuntu:14.04
         steps:
-            - run: echo << {{ .Environment.hogehoge }} >>
+            - run: echo {{ .Environment.hogehoge }}
     # - when:
     #     condition: << variables.todo-vm-deploy >>
     #     steps:
