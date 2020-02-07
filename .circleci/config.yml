@@ -12,7 +12,7 @@ jobs:
         docker: 
             - image: ubuntu:14.04
         steps:
-            - run: echo varibales.hogehoge
+            - run: echo << varibales.hogehoge >>
     # - when:
     #     condition: << variables.todo-vm-deploy >>
     #     steps:
