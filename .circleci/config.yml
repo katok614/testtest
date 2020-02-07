@@ -1,14 +1,14 @@
 version: 2.1
 
-variables:
-    todo-vm-deploy: true
-    hogehoge: hoge
+# environment:
+#     todo-vm-deploy: true
+#     hogehoge: hoge
  
 orbs:
     hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
 
 jobs:
-    variables:
+    environment:
         todo-vm-deploy: true
         hogehoge: hoge
     
@@ -16,7 +16,7 @@ jobs:
         docker: 
             - image: ubuntu:14.04
         steps:
-            - run: echo << varibales.hogehoge >>
+            - run: echo << {{ .Environment.hogehoge }} >>
     # - when:
     #     condition: << variables.todo-vm-deploy >>
     #     steps:
