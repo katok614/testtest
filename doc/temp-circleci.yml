@@ -3,6 +3,10 @@ version: 2.1
 todo-vm-deploy : true
 todo-linux-os-setup : false
 
+orbs:
+    vm-deploy: sb-msp/azure-vm@0.0.7 # deploy-vm-linux commandが定義されている
+    linux-os-setup: sb-msp/ansible-linux-os-setup@0.0.7 # ubuntu-setup commandが定義されている
+
 workflows:
     "MSP-Workflow":
         jobs:
@@ -10,9 +14,8 @@ workflows:
                - when:
                   condition: << todo-vm-deploy >>
                   steps:
-                    - run : echo "vm-deploy/deploy-vm-linux"
+                    - vm-deploy/deploy-vm-linux
                - when:
                   condition: << todo-linux-os-setup >>
                   steps:
-                    - run : echo "linux-os-setup/ubuntu-setup"
-
+                    - linux-os-setup/ubuntu-setup
