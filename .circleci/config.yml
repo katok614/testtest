@@ -8,6 +8,8 @@ orbs:
 
 jobs:
     build:
+        docker: 
+            - image: ubuntu:14.04
         steps:
             - run: echo "hoge"
     # - when:
