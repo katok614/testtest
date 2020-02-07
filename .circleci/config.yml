@@ -8,6 +8,10 @@ orbs:
     hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
 
 jobs:
+    variables:
+        todo-vm-deploy: true
+        hogehoge: hoge
+    
     build:
         docker: 
             - image: ubuntu:14.04
