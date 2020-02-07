@@ -6,13 +6,12 @@ todo-linux-os-setup : false
 workflows:
     "MSP-Workflow":
         jobs:
-            vm-deploy-job:
-               - when:
-                  condition: << todo-vm-deploy >>
-                  steps:
-                    - run : echo "vm-deploy/deploy-vm-linux"
-               - when:
-                  condition: << todo-linux-os-setup >>
-                  steps:
-                    - run : echo "linux-os-setup/ubuntu-setup"
-
+            - vm-deploy-job:
+                - when:
+                    condition: << todo-vm-deploy >>
+                    steps:
+                        - run : echo "vm-deploy/deploy-vm-linux"
+                - when:
+                    condition: << todo-linux-os-setup >>
+                    steps:
+                        - run : echo "linux-os-setup/ubuntu-setup"
