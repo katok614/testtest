@@ -7,16 +7,21 @@ version: 2.1
 orbs:
     hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
 
-jobs:
-    build:
-        environment:
-            todo-vm-deploy: true
-            hogehoge: hoge
+workflows:
+    MSP-Workflow:
+        jobs:
+            - hello/hello-build
+
+# jobs:
+#     build:
+#         environment:
+#             todo-vm-deploy: true
+#             hogehoge: hoge
         
-        docker: 
-            - image: ubuntu:14.04
-        steps:
-            - run: echo << .Environment.hogehoge >>
+#         docker: 
+#             - image: ubuntu:14.04
+#         steps:
+#             - run: echo << .Environment.hogehoge >>
     # - when:
     #     condition: << variables.todo-vm-deploy >>
     #     steps:
