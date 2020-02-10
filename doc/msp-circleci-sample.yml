@@ -1,0 +1,21 @@
+version: 2.1
+
+workflows:
+    MSP-Workflow:
+        jobs:
+            # - msp_hcpresources        実行しないJobはコメントアウト
+            # - msp_create_repository
+            # - msp_push_arm_template
+            - init_env
+            - windows_vm:
+                spec_file: hoge.yml
+                vm_count: 10 
+
+
+orbs:
+  msp_hcpresources: sb_msp/msp_hcpresources@0.0.7
+  msp_create_repository: sb_msp/msp_create_repository@1.0.0
+  msp_push_arm_template: sb_msp/msp_push_arm_template@1.0.1
+  init_env: sb_msp/init_env@1.0.1
+  windows_vm: sb_msp/windows_vm@1.0.0
+
