@@ -3,18 +3,26 @@ version: 2.1
 # environment:
 #     todo-vm-deploy: true
 #     hogehoge: hoge
- 
+
+jobs:
+  contexttest:
+    executor: : azure-cle/azure-docker
+    steps:
+      - run: echo ${ENV1}
+      - run: echo ${ENV2}
+
+
 workflows:
-    MSP-Workflow:
-        jobs:
-            - hello/hello-build:
-                  context: 
-                    Context1
-                    Context2
+  MSP-Workflow:
+    jobs:
+      - contexttest:
+          context: 
+            Context1
+            Context2
 
 
-orbs:
-    hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
+# orbs:
+#     hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
 
 
 # jobs:
