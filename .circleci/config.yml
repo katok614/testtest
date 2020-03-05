@@ -6,7 +6,7 @@ version: 2.1
 
 jobs:
   contexttest:
-    executor: : azure-cle/azure-docker
+    executor: azure-cle/azure-docker
     steps:
       - run: echo ${ENV1}
       - run: echo ${ENV2}
