@@ -6,7 +6,8 @@ version: 2.1
 
 jobs:
   contexttest:
-    executor: azure-cli/azure-docker
+    docker:
+      - image: "circleci/node:9.6.1"
     steps:
       - run: echo ${ENV1}
       - run: echo ${ENV2}
