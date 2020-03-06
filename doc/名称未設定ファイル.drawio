@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-06T00:12:16.967Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36" etag="4e21QyaGlkZ37om_yvOf" version="12.8.1" type="github">
+<mxfile host="www.draw.io" modified="2020-03-06T00:17:20.020Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36" etag="tqk5y91-IXFearmBKw3k" version="12.8.1" type="github">
   <diagram id="P5GaY6llUOyP0zUPhSW4" name="ページ1">
     <mxGraphModel dx="1022" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -26,7 +26,7 @@
           <mxGeometry y="60" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="S7QVg3ZZSSZPas2lcmrq-12" value="MSPTool_prd / stg / sdb  : CircleCI Context" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="100" y="680" width="336" height="210" as="geometry" />
+          <mxGeometry x="100" y="745" width="336" height="210" as="geometry" />
         </mxCell>
         <mxCell id="S7QVg3ZZSSZPas2lcmrq-16" value="MSPTOOL_CUSTKEY_KEYVAULT_CONTAINER_NAME&#xa;MSPTOOL_CUSTKEY_KEYVAULT_SUBSCRIPTION" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="S7QVg3ZZSSZPas2lcmrq-12" vertex="1">
           <mxGeometry y="26" width="336" height="38" as="geometry" />
@@ -40,8 +40,8 @@
         <mxCell id="CM9sQIWE9t5lUVxzC3yI-5" value="SLACK_WEBHOOK" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="S7QVg3ZZSSZPas2lcmrq-12">
           <mxGeometry y="184" width="336" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="S7QVg3ZZSSZPas2lcmrq-18" value="Customore Project 〈環境変数〉: CircleCI" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="100" y="430" width="336" height="136" as="geometry" />
+        <mxCell id="S7QVg3ZZSSZPas2lcmrq-18" value="Customer Project 〈環境変数〉: CircleCI" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="558" width="336" height="136" as="geometry" />
         </mxCell>
         <mxCell id="S7QVg3ZZSSZPas2lcmrq-19" value="CUSTOMER_ID&#xa;CUSTOMER_TENANT_ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="S7QVg3ZZSSZPas2lcmrq-18" vertex="1">
           <mxGeometry y="26" width="336" height="34" as="geometry" />
@@ -84,6 +84,18 @@
         </mxCell>
         <mxCell id="CM9sQIWE9t5lUVxzC3yI-3" value="AAD用アプリケーション&lt;br&gt;Service Principal" style="html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="205" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CM9sQIWE9t5lUVxzC3yI-10" value="Customer Repository : GitHub" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="404" width="336" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="CM9sQIWE9t5lUVxzC3yI-11" value="CUSTOMER_ID&#xa;CUSTOMER_TENANT_ID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CM9sQIWE9t5lUVxzC3yI-10">
+          <mxGeometry y="26" width="336" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="CM9sQIWE9t5lUVxzC3yI-12" value="CUSTOMER_SUBSCRIPTION_Managed-MGMT-1&#xa;CUSTOMER_SUBSCRIPTION_Managed-SRV-1&#xa;CUSTOMER_SUBSCRIPTION_UserSelf-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CM9sQIWE9t5lUVxzC3yI-10">
+          <mxGeometry y="60" width="336" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CM9sQIWE9t5lUVxzC3yI-13" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CM9sQIWE9t5lUVxzC3yI-10">
+          <mxGeometry y="110" width="336" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
