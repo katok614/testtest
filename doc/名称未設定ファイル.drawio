@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-09T06:03:54.427Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36" etag="cU77Rsu-duHgAM9ygri6" version="12.8.1" type="github">
+<mxfile host="www.draw.io" modified="2020-03-10T00:34:07.448Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36" etag="cTmViBqfvYfOTNG2-aZT" version="12.8.1" type="github">
   <diagram id="P5GaY6llUOyP0zUPhSW4" name="ページ1">
     <mxGraphModel dx="1022" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="S7QVg3ZZSSZPas2lcmrq-6" value="Github Token&#xa;CircleCI Token" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="S7QVg3ZZSSZPas2lcmrq-5" vertex="1">
           <mxGeometry y="26" width="230" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="S7QVg3ZZSSZPas2lcmrq-8" value="CUSTOMER_INITIAL_ADMIN_ID&#xa;CUSTOMER_INITIAL_ADMIN_Secret&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="S7QVg3ZZSSZPas2lcmrq-5" vertex="1">
+        <mxCell id="S7QVg3ZZSSZPas2lcmrq-8" value="CUSTOMER_INITIAL_ADMIN_USER_ID&#xa;CUSTOMER_INITIAL_ADMIN_Secret&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="S7QVg3ZZSSZPas2lcmrq-5" vertex="1">
           <mxGeometry y="60" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="S7QVg3ZZSSZPas2lcmrq-12" value="MSPTool_prd / stg / sdb  : CircleCI Context" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -105,6 +105,21 @@
         </mxCell>
         <mxCell id="CM9sQIWE9t5lUVxzC3yI-19" value="CircleCI環境変数にするかTBD" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="390" y="140" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaOMgpJlK4pdIPkkHnON-3" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="43" y="1003" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaOMgpJlK4pdIPkkHnON-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="450" y="660" width="20" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="TaOMgpJlK4pdIPkkHnON-7" value="初期値はDummyが入る" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="660" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaOMgpJlK4pdIPkkHnON-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="450" y="550" width="20" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="TaOMgpJlK4pdIPkkHnON-9" value="msp create repositoryが設定" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="469" y="587" width="140" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
