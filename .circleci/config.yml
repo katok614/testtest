@@ -25,7 +25,9 @@ jobs:
           name: "ls paramdir"
           command: |
             echo 
-            while read paramfile; do  echo $paramfile ; done < <(ls -A -1 << pipeline.parameters.parametersDirectoryPath >> )
+            while read paramfile; do  
+              echo $paramfile
+            done < <(ls -A -1 << pipeline.parameters.parametersDirectoryPath >> )
 
 
 workflows:
