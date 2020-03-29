@@ -18,8 +18,8 @@ workflows:
     jobs:
       - contexttest:
           context: 
-            Context1
-            Context2
+            - "Context1"
+            - "Context2"
 
 
 # orbs:
