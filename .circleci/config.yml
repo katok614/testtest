@@ -3,6 +3,10 @@ version: 2.1
 # environment:
 #     todo-vm-deploy: true
 #     hogehoge: hoge
+parameters: # Pipelineパラメータ
+  parametersDirectoryPath:
+    type: string
+    default: "Azure/parameters"
 
 jobs:
   contexttest:
@@ -12,14 +16,28 @@ jobs:
       - run: echo ${ENV1}
       - run: echo ${ENV2}
 
+  looptest:
+    docker:
+      - image: "circleci/node:9.6.1"
+    steps:
+      - checkout
+      - run:
+          name: "ls paramdir"
+          command: |
+            echo 
+            while read paramfile; do  
+              echo $paramfile
+            done < <(ls -A -1 << pipeline.parameters.parametersDirectoryPath >> )
+
 
 workflows:
   MSP-Workflow:
     jobs:
-      - contexttest:
-          context: 
-            - "Context1"
-            - "Context2"
+      - looptest
+      # - contexttest:
+      #     context: 
+      #       Context1
+      #       Context2
 
 
 # orbs:
