@@ -7,7 +7,7 @@ parameters: # Pipelineパラメータ
   parametersDirectoryPath:
     type: string
     default: "Azure/parameters"
-
+  
 jobs:
   contexttest:
     docker:
